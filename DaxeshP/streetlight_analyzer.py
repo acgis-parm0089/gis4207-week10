@@ -43,4 +43,4 @@ def show_road_names(pattern=None):
     names = {row[0] for row in arcpy.da.SearchCursor(roads_cl_fc, road_name_field, where_clause=where_clause)}
     
     for name in names:
-        print(name)
+        print (name)
